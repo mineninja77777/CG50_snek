@@ -61,8 +61,10 @@ void setDifficulty() {
 
     if (key == 0x0031) {
         speed = 1;
+        ramp = 0;
     } else if (key == 0x0032) {
         speed = 2;
+        ramp = 0;
     } else if (key == 0x0033) {
         speed = 1;
         ramp = 0.1;
@@ -155,8 +157,6 @@ void moveSnake(int x, int y) {
         snakeY[snakeLen - 1] = nextY;
     }
 }
-
-
 
 // main code
 int main()
